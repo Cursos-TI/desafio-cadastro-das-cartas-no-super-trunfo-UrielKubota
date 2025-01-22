@@ -3,27 +3,24 @@
 int main (){
 // Atributos das cartas
     float populacao;
-    double area;
-    long PIB;
+    long area;
+    float PIB;
     int pontosturisticos;
     char nome [50];
-//Cartas
-    printf ("Pais\n");
+//Inserção das informações das cartas
     printf ("Nome:\n");
     scanf ("%s", &nome);
-    printf ("População do Brasil:\n");
-    scanf ("%f", &populacao); 
-    printf ("Area do Brasil:\n");
+    printf ("População:\n");
+    scanf ("%lf", &populacao); 
+    printf ("Area:\n");
     scanf ("%Lf", &area); 
-    printf ("PIB do Brasil:\n");
-    scanf ("%lf", &PIB); 
-    printf ("Pontos Turisticos do Brasil:\n");
+    printf ("PIB:\n");
+    scanf ("%f", &PIB); 
+    printf ("Pontos Turisticos:\n");
     scanf ("%d", &pontosturisticos); 
-
-    printf ("Nome: %s População do Brasil: %f milhoes Area: %f km\n", nome, populacao, area);
+// Dados completos da carta
+    printf ("Nome: %s População: %f Area: %f\n", nome, populacao, area);
     printf ("PIB: %f trilhoes Pontos Turisticos: %d\n",PIB, pontosturisticos);
-
-
 
 
 }
