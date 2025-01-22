@@ -3,7 +3,7 @@
 int main (){
 // Atributos das cartas
     float populacao;
-    long area;
+    float area;
     float PIB;
     int pontosturisticos;
     char nome [50];
@@ -19,8 +19,12 @@ int main (){
     printf ("Pontos Turisticos:\n");
     scanf ("%d", &pontosturisticos); 
 // Dados completos da carta
-    printf ("Nome: %s População: %f Area: %f\n", nome, populacao, area);
-    printf ("PIB: %f trilhoes Pontos Turisticos: %d\n",PIB, pontosturisticos);
+    printf ("Nome: %s\n", nome);
+    printf ("População: %f\n, populacao);
+    printf ("Area: %f\n", area);
+    printf ("PIB: %f\n, PIB");
+    printf ("Pontos Turisticos: %d\n", pontosturisticos);
 
+return 0;
 
 }
