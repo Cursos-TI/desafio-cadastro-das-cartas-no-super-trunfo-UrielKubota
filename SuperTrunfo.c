@@ -11,18 +11,18 @@ int main (){
     printf ("Nome:\n");
     scanf ("%s", &nome);
     printf ("População:\n");
-    scanf ("%lf", &populacao); 
+    scanf ("%f", &populacao); 
     printf ("Area:\n");
-    scanf ("%Lf", &area); 
+    scanf ("%f", &area); 
     printf ("PIB:\n");
     scanf ("%f", &PIB); 
     printf ("Pontos Turisticos:\n");
     scanf ("%d", &pontosturisticos); 
 // Dados completos da carta
     printf ("Nome: %s\n", nome);
-    printf ("População: %f\n, populacao);
+    printf ("População: %f\n", populacao);
     printf ("Area: %f\n", area);
-    printf ("PIB: %f\n, PIB");
+    printf ("PIB: %f\n", PIB);
     printf ("Pontos Turisticos: %d\n", pontosturisticos);
 
 return 0;
