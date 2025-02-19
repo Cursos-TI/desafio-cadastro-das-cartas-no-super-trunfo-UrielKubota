@@ -2,28 +2,32 @@
 
 int main (){
 // Atributos das cartas
-    float populacao;
-    float area;
-    float PIB;
-    int pontosturisticos;
+    float area, PIB;
+    int pontosturisticos, populacao;
     char nome [50];
+    float densidadepopulacional, PIBpercapita; 
 //Inserção das informações das cartas
-    printf ("Nome:\n");
+    printf ("Digite o Código da Carta:\n");
     scanf ("%s", &nome);
-    printf ("População:\n");
-    scanf ("%f", &populacao); 
-    printf ("Area:\n");
+    printf ("Digite o Nome da Cidade:\n");
+    scanf ("%s", &nome);
+    printf ("Digite o número da População:\n");
+    scanf ("%d", &populacao); 
+    printf ("Digite a Area:\n");
     scanf ("%f", &area); 
-    printf ("PIB:\n");
+    printf ("Digite o PIB:\n");
     scanf ("%f", &PIB); 
-    printf ("Pontos Turisticos:\n");
+    printf ("Digite o número de Pontos Turisticos:\n");
     scanf ("%d", &pontosturisticos); 
 // Dados completos da carta
-    printf ("Nome: %s\n", nome);
-    printf ("População: %f\n", populacao);
-    printf ("Area: %f\n", area);
-    printf ("PIB: %f\n", PIB);
+    printf ("Código: %s\n", nome);
+    printf ("Nome da Cidade: %s\n", nome);
+    printf ("População: %d\n", populacao);
+    printf ("Area: %f km\n", area);
+    printf ("PIB: %f bilhões de reais\n", PIB);
     printf ("Pontos Turisticos: %d\n", pontosturisticos);
+    printf ("Densidade Populacional: %f\n", populacao / area);
+    printf ("Densidade Populacional: %f\n", PIB / populacao);
 
 return 0;
 
