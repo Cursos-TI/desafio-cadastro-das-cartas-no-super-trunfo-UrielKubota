@@ -1,16 +1,18 @@
 #include <stdio.h>
 
 int main (){
-// Atributos das cartas
+// Atributos da carta 01
     float area, PIB;
     int pontosturisticos, populacao;
-    char nome [50];
+    char codigodacarta [50],estado [50],nomedacidade[50];
     float densidadepopulacional, PIBpercapita; 
 //Inserção das informações das cartas
+    printf ("Digite o Estado:\n");
+    scanf ("%s", &estado);
     printf ("Digite o Código da Carta:\n");
-    scanf ("%s", &nome);
+    scanf ("%s", &codigodacarta);
     printf ("Digite o Nome da Cidade:\n");
-    scanf ("%s", &nome);
+    scanf ("%s", &nomedacidade);
     printf ("Digite o número da População:\n");
     scanf ("%d", &populacao); 
     printf ("Digite a Area:\n");
@@ -20,14 +22,16 @@ int main (){
     printf ("Digite o número de Pontos Turisticos:\n");
     scanf ("%d", &pontosturisticos); 
 // Dados completos da carta
-    printf ("Código: %s\n", nome);
-    printf ("Nome da Cidade: %s\n", nome);
+    printf ("Carta 01\n");
+    printf ("Nome da Cidade: %s\n", estado);
+    printf ("Código: %s\n", codigodacarta);
+    printf ("Nome da Cidade: %s\n", nomedacidade);
     printf ("População: %d\n", populacao);
     printf ("Area: %f km\n", area);
     printf ("PIB: %f bilhões de reais\n", PIB);
     printf ("Pontos Turisticos: %d\n", pontosturisticos);
     printf ("Densidade Populacional: %f\n", populacao / area);
-    printf ("Densidade Populacional: %f\n", PIB / populacao);
+    printf ("PIB per Capita: %f\n", PIB / populacao);
 
 return 0;
 
